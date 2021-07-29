@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create a Post</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    </head>
+
+    <body>
+        <h1>Create a new Blog Post!</h1>
+        <h2>Complete the fields below to add your post to the site</h2>
+        <div class="containera">
+            <div class="containerb">
+                <form action="blogview.php" method="POST">
+                    <label>Title:<br /><input type="text" name="title"/></label><br />
+                    <label>Post:</label><br /><textarea name="detail" maxlength="1000" placeholder="Type your blog post here"></textarea><br />
+                    <label>Tags: <br /><input type="text" name="tags"/></label><br />
+                    <div class="containerc">
+                        <input type="submit" value="Submit Post"/>
+                        <input type="reset" value="Reset Form"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
